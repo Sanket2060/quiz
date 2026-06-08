@@ -19,7 +19,8 @@
     "supabase:generate-migration": "npx supabase db diff | npx supabase migration new",
     "supabase:generate-seed": "npx supabase db dump --data-only -f supabase/seed.sql",
     "supabase:push": "npx supabase db push",
-    "supabase:pull": "npx supabase db pull"
+    "supabase:pull": "npx supabase db pull",
+    "db:seed": "tsx supabase/seed.ts"
   },
   "dependencies": {
     "@opentelemetry/api": "^1.9.1",
@@ -46,6 +47,7 @@
     "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^11.0.0",
     "autoprefixer": "^10.4.19",
     "drizzle-kit": "^0.31.10",
     "eslint": "^8.57.0",
@@ -57,6 +59,8 @@
     "prettier": "^3.3.1",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "supabase": "^1.172.2",
-    "typescript": "^5.4.5"
+    "tsx": "^4.22.4",
+    "typescript": "^5.4.5",
+    "uuid": "^14.0.0"
   }
 }
